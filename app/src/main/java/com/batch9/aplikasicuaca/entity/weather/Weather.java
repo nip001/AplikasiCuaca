@@ -1,12 +1,11 @@
 
-package com.batch9.aplikasicuaca.entity;
+package com.batch9.aplikasicuaca.entity.weather;
 
 import java.io.Serializable;
 import java.util.List;
 import javax.annotation.Generated;
 import android.os.Parcelable;
-import android.os.Parcelable.Creator;
-import android.os.Parcelable.Creator;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -73,7 +72,7 @@ public class Weather implements Serializable, Parcelable
 
     protected Weather(android.os.Parcel in) {
         this.coord = ((Coord) in.readValue((Coord.class.getClassLoader())));
-        in.readList(this.weather, (com.batch9.aplikasicuaca.entity.Weather__1.class.getClassLoader()));
+        in.readList(this.weather, (Weather__1.class.getClassLoader()));
         this.base = ((String) in.readValue((String.class.getClassLoader())));
         this.main = ((Main) in.readValue((Main.class.getClassLoader())));
         this.visibility = ((Integer) in.readValue((Integer.class.getClassLoader())));

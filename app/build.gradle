@@ -45,4 +45,5 @@ dependencies {
     implementation 'com.github.maayyaannkk:ImagePicker:1.0.10'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
     implementation 'javax.annotation:javax.annotation-api:1.3.2'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
 }
